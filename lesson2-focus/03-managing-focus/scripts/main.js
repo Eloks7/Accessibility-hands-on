@@ -24,3 +24,14 @@ page('/:slug', function(context) {
 page({
   hashbang: true
 });
+let nav = document.querySelector('#menu');
+let tabs = document.querySelectorAll('.mdl-layout__tab');
+let wiv = document.querySelector('#wiv');
+
+nav.addEventListener('click', function(e){
+  target = e.target;
+  if (target === tabs[0]) {
+    wiv.focus();
+  }
+})
+
