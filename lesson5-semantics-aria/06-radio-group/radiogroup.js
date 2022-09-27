@@ -35,6 +35,7 @@
       }
 
       // What about here?
+      this.el.setAttribute('role', 'radiogroup');
     }
 
   }
